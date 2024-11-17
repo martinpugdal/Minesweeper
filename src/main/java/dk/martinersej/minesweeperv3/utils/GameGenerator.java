@@ -19,7 +19,7 @@ public class GameGenerator extends ChunkGenerator {
         ChunkData chunk = this.createChunkData(world);
 
         // Skaber en Random med verdens seed + chunk-koordinater for at gøre det unikt pr. chunk
-        random = new Random(world.getSeed() + chunkX * 31 + chunkZ * 17);
+        random = new Random(world.getSeed() + chunkX * 31L + chunkZ * 17L);
 
         for (int x = 0; x < 16; x++) {
             for (int z = 0; z < 16; z++) {

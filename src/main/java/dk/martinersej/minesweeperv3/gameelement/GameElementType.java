@@ -31,11 +31,12 @@ public enum GameElementType {
     }),
     NUMBER();
 
-    private ItemStack[] blockTypes;
+    private final ItemStack[] blockTypes;
 
     GameElementType() {
         this.blockTypes = null;
     }
+
     GameElementType(ItemStack[] blockTypes) {
         this.blockTypes = blockTypes;
     }
@@ -47,7 +48,7 @@ public enum GameElementType {
 
     public ItemStack[] getBlockTypes(int number) {
         // nvm, er det her en god måde? Ja ig
-        if(!this.equals(NUMBER)) {
+        if (!this.equals(NUMBER)) {
             return blockTypes;
         }
 

@@ -2,8 +2,6 @@ package dk.martinersej.minesweeperv3.listeners;
 
 import dk.martinersej.minesweeperv3.Minesweeper;
 import dk.martinersej.minesweeperv3.gameelement.GameElement;
-import dk.martinersej.minesweeperv3.gameelement.GameElementType;
-import dk.martinersej.minesweeperv3.gameelement.elements.Bomb;
 import dk.martinersej.minesweeperv3.gameelement.elements.Flag;
 import dk.martinersej.minesweeperv3.utils.GameWorld;
 import org.bukkit.Bukkit;

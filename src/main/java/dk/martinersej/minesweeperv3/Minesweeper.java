@@ -1,6 +1,5 @@
 package dk.martinersej.minesweeperv3;
 
-import dk.martinersej.minesweeperv3.command.DebugCommand;
 import dk.martinersej.minesweeperv3.command.ResetCommand;
 import dk.martinersej.minesweeperv3.command.TexturepackCommand;
 import dk.martinersej.minesweeperv3.gameelement.GameElement;
@@ -48,10 +47,6 @@ public final class Minesweeper extends JavaPlugin {
         // Plugin startup logic
         instance = this;
 
-        // Create game world - should happens on the first join
-//        GameWorld.getInstance().createWorld();
-//        setupFirstReveal(GameWorld.getInstance().getWorld().getSpawnLocation());
-
         // Register listeners
         getServer().getPluginManager().registerEvents(new GameListener(), this);
         getServer().getPluginManager().registerEvents(new TexturePackListener(), this);
@@ -59,7 +54,6 @@ public final class Minesweeper extends JavaPlugin {
         // Register commands
         getCommand("reset").setExecutor(new ResetCommand());
         getCommand("texturepack").setExecutor(new TexturepackCommand());
-        getCommand("debug").setExecutor(new DebugCommand());
 
         timeoutTask();
     }
