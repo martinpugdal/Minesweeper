@@ -1,0 +1,20 @@
+name: Minesweeper
+version: '${version}'
+main: dk.martinersej.minesweeperv3.Minesweeper
+load: POSTWORLD
+
+commands:
+  reset:
+    description: Reset the game
+    usage: /<command>
+    permission: minesweeper.reset
+  debug:
+    description: Debug the elements
+    usage: /<command>
+    permission: minesweeper.reset
+  texturepack:
+    description: Get the texture pack
+    usage: /<command>
+    aliases:
+      - rp
+      - tpack
